@@ -1,31 +1,14 @@
 {
-  "name": "disc-11",
-  "version": "1.6.2",
-  "private": true,
-  "description": "A dedicated open-source music bot for Zhycorp based on Jukebox.",
-  "homepage": "https://github.com/zhycorp/disc-11#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhycorp/disc-11.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zhycorp/disc-11/issues"
-  },
-  "license": "ISC",
-  "author": "Zhycorp <support@zhycorp.xyz> (https://github.com/zhycorp)",
+  "name": "Disc-11",
+  "version": "1.0.0",
+  "description": "",
   "main": "start.js",
   "scripts": {
-    "build": "npm run lint && npm run compile",
-    "compile": "tsc --build tsconfig.json",
-    "lint": "eslint . --ignore-path .gitignore --ext .ts --cache --cache-location .cache/eslintcache",
-    "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix --cache --cache-location .cache/eslintcache",
     "start": "node start.js",
-    "start:dev": "echo [INFO] Sharding disabled when using ts-node && ts-node src/bot"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "@hazmi35/eslint-config/typescript",
-    "ignorePatterns": "dist/*"
-  },
+  "author": "Unknown",
+  "license": "ISC",
   "dependencies": {
     "date-fns": "^2.16.1",
     "discord.js": "^12.4.1",
@@ -51,7 +34,5 @@
     "libsodium-wrappers": "^0.7.8",
     "utf-8-validate": "^5.0.2",
     "zlib-sync": "^0.1.7"
-  },
-  "engines": {
-    "node": ">=12.x"
+  }
 }
