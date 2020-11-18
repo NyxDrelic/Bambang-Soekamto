@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/zhycorp/disc-11/issues"
   },
-  "license": "AGPL-3.0",
+  "license": "ISC",
   "author": "Zhycorp <support@zhycorp.xyz> (https://github.com/zhycorp)",
   "main": "start.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "compile": "tsc --build tsconfig.json",
     "lint": "eslint . --ignore-path .gitignore --ext .ts --cache --cache-location .cache/eslintcache",
     "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix --cache --cache-location .cache/eslintcache",
-    "start": "node start",
+    "start": "node start.js",
     "start:dev": "echo [INFO] Sharding disabled when using ts-node && ts-node src/bot"
   },
   "eslintConfig": {
@@ -27,7 +27,6 @@
     "ignorePatterns": "dist/*"
   },
   "dependencies": {
-    "@discordjs/opus": "^0.3.3",
     "date-fns": "^2.16.1",
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
@@ -38,26 +37,19 @@
     "opusscript": "^0.0.7",
     "tslib": "^2.0.3",
     "winston": "^3.3.3",
-    "ytdl-core": "^4.0.3"
-  },
-  "devDependencies": {
+    "ytdl-core": "^4.0.3",
     "@hazmi35/eslint-config": "^3.0.0",
     "@types/node": "^14.14.5",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
     "eslint": "^7.12.1",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.5"
-  },
-  "optionalDependencies": {
-    
+    "typescript": "^4.0.5",
+    "@discordjs/opus": "^0.3.3",
     "bufferutil": "^4.0.1",
     "erlpack": "github:discord/erlpack",
     "libsodium-wrappers": "^0.7.8",
     "utf-8-validate": "^5.0.2",
     "zlib-sync": "^0.1.7"
-  },
-  "engines": {
-    "node": ">=12.x"
   }
 }
